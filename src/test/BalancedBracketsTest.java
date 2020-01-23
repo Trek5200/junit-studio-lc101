@@ -1,10 +1,7 @@
 package test;
 
-import main.BalancedBrackets;
 import org.junit.Test;
-
-import java.io.Console;
-
+import main.BalancedBrackets;
 import static org.junit.Assert.*;
 
 public class BalancedBracketsTest {
@@ -44,6 +41,7 @@ public class BalancedBracketsTest {
     public void checksBackToBackWithTextReturnsFalse() {
         assertFalse(BalancedBrackets.hasBalancedBrackets("Launch]Code["));
     }
+
     @Test
     public void textInBracketCheckReturnsTrue() {
         assertTrue(BalancedBrackets.hasBalancedBrackets("[LaunchCode]"));
